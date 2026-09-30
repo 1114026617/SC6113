@@ -12,9 +12,25 @@
 <body>
   <main class="site-shell">
     <header class="hero">
-      <p class="eyebrow">SEPOLIA TESTNET · COMMUNITY NOTICEBOARD</p>
-      <h1>Find<span>Back</span></h1>
-      <p class="intro">Report a lost item, record when someone finds it, and confirm its return. Every status change is stored on-chain.</p>
+      <div class="hero-topline">
+        <div class="brand-lockup">
+          <span class="brand-symbol" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7.5 3.5 11a4.95 4.95 0 0 0 7 7L14 14.5"/><path d="m17 16.5 3.5-3.5a4.95 4.95 0 0 0-7-7L10 9.5"/><path d="m8.5 15.5 7-7"/></svg>
+          </span>
+          <span>FindBack</span>
+        </div>
+        <span class="demo-chip"><span></span> Sepolia testnet</span>
+      </div>
+      <p class="eyebrow">A KINDER WAY TO FIND WHAT MATTERS</p>
+      <h1>Lost things<br>find their way <span>back.</span></h1>
+      <p class="intro">Post a report, let a finder update it, and confirm the return — with every step recorded transparently on-chain.</p>
+      <ol class="journey" aria-label="How FindBack works">
+        <li><b>01</b><span>Report</span></li>
+        <li><b>02</b><span>Reconnect</span></li>
+        <li><b>03</b><span>Return</span></li>
+      </ol>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
     </header>
 
     <section class="setup card" aria-labelledby="setup-title">
@@ -25,6 +41,7 @@
         </div>
         <span class="network-badge">Sepolia</span>
       </div>
+      <p class="card-lead">Use a browser wallet to read the community noticeboard and sign your own updates.</p>
       <label for="address">Deployed contract address</label>
       <input id="address" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x..." aria-describedby="address-help">
       <p id="address-help" class="hint">Paste the address of your deployed LostAndFound contract. It is saved only in this browser.</p>
@@ -44,6 +61,7 @@
           <h2 id="report-title">Report a lost item</h2>
         </div>
       </div>
+      <p class="card-lead">Keep reports useful and privacy-conscious. Personal contact details do not belong on-chain.</p>
       <form id="report-form">
         <label for="item-name">Item name</label>
         <input id="item-name" name="item-name" type="text" maxlength="70" required placeholder="For example, navy water bottle">
